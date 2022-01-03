@@ -97,7 +97,7 @@
   transform: translate(-50%, -50%);
 }
 
-.background-image{
+.btn-background{
   opacity: 0.4;
   border-radius: 25px;
   filter: grayscale(100%);
@@ -117,7 +117,99 @@
   min-height: 50px;
   color: white;
 }
+
+.marquee{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 1000;
+}
+
+.headertext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.headerbackground{
+  width: 100%;
+  height: 300px;
+}
+
+.bgimg1{
+  background-image: linear-gradient(rgba(7,63,207, 0.8), rgba(7,63,207, 0.8));
+}
+
+.floating-menu{
+  border-radius:100px;
+  z-index:999;
+  padding-top:10px;
+  padding-bottom:10px;
+  position:relative;
+  width: 100%;
+  margin: auto;
+  display:inline-block;
+  top: 80%;
+  align-items: center;
+  z-index: 6;
+}
+
+.main-menu{
+  margin:auto;
+  padding-left:0;
+  list-style:none;
+  align-items: center;
+}
+
+.main-menu li a{
+  display:inline-block;
+  padding:20px;
+  color:rgba(7,63,207);
+  border-radius:50px;
+  position:relative;
+  -webkit-transition:none;
+  -o-transition:none;
+  transition:none
+}
+
+.main-menu li a:hover{
+  background:rgba(244,244,244,.3)
+}
+
+.menu-bg{
+  background-image:-webkit-linear-gradient(top,#ffffff 0,#ffffff 100%);
+  background-image:-o-linear-gradient(top,#ffffff 0,#ffffff 100%);
+  background-image:linear-gradient(to bottom,#ffffff 0,#167699 100%);
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:50px;
+  z-index:-1;
+  top:-10px;
+  -webkit-transition:.1s;
+  -o-transition:.1s;
+  transition:.1s
+  
+}
+
+ul#horizontal-list li {
+  display: inline;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+}
 /*Vibe Part*/
+
 
 body {
   margin: 0;
@@ -682,6 +774,7 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 
 @media (min-width: 576px) {
