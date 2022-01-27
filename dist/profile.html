@@ -9,7 +9,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -36,107 +36,24 @@
             </div>
         </section>
         <!-- Floating Menu -->
-        <nav class="floating-menu">
-            <div class="box">
-                <ul class="main-menu" id="horizontal-list">
-                    <li>
-                        <a href="#" class="ripple">
-                            History
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="ripple">
-                            Vission & Mission
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="ripple">
-                            Development Chart
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="menu-bg box"></div>
-        </nav>
-        <!-- Menu Button -->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link button-color-blue" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid btn-background" src="assets/img/portfolio/1.jpg" alt="..." />
-                                <div class="centered">Profile</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link button-color-yellow" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid btn-background" src="assets/img/portfolio/2.jpg" alt="..." />
-                                <div class="centered">Information</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link button-color-blue" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid btn-background" src="assets/img/portfolio/3.jpg" alt="..." />
-                                <div class="centered">Trivia/Quiz</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link button-color-yellow" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid btn-background" src="assets/img/portfolio/4.jpg" alt="..." />
-                                <div class="centered">Schedule</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link button-color-blue" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid btn-background" src="assets/img/portfolio/5.jpg" alt="..." />
-                                <div class="centered">Catalog</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link button-color-yellow" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid btn-background" src="assets/img/portfolio/6.jpg" alt="..." />
-                                <div class="centered">Voting</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="container">
+            <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">History</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Vission & Mission</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Development Chart</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sunt libero asperiores excepturi perferendis aliquam distinctio illo nihil odit! Commodi, eius ratione voluptas a at laboriosam necessitatibus maxime nostrum illum.</div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+              </div>
+          </div>
         <!-- Running Text -->
         <section class="page-section running-text">
             <div class="container">
