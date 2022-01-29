@@ -94,7 +94,9 @@
   font-size: large;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .btn-background{
@@ -231,6 +233,11 @@ ul#horizontal-list li {
 
 #myBtn:hover {
   background-color: #FAB530;
+}
+
+.iconbtn{
+  text-align: center;
+  display: inline-block;
 }
 /*Vibe Part*/
 
