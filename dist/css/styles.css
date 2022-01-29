@@ -142,6 +142,10 @@
   background-image: linear-gradient(rgba(7,63,207, 0.8), rgba(7,63,207, 0.8));
 }
 
+.bgimg2{
+  background-image: linear-gradient(rgba(250,181,48, 0.8), rgba(250,181,48, 0.8));;
+}
+
 .floating-menu{
   border-radius:100px;
   z-index:999;
@@ -209,23 +213,24 @@ ul#horizontal-list li {
   height: 100px;
 }
 
-.act-btn{
-  background:white;
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: green;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  text-decoration: none;
-  transition: ease all 0.3s;
+#myBtn {
   position: fixed;
-  right: 30px;
-  bottom:30px;
+  width:55px;
+	height:55px;
+  top: 150px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: white;
+  color: rgba(7,63,207);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #FAB530;
 }
 /*Vibe Part*/
 
@@ -4149,7 +4154,7 @@ textarea.form-control-lg {
 
 .nav-pills .nav-link {
   background: none;
-  border: 0;
+  border: 1px;
   border-radius: 50rem;
 }
 .nav-pills .nav-link.active,
